@@ -9,3 +9,35 @@
   margin: auto;
   max-width: 80%;
 }
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Header */
+
+header {
+  padding: 30px;
+  text-align: center;
+}
+
+
+/* Main */
+
+.formNewArticle{
+  margin-top: 20px;
+}
+
+.btnNewArticle {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.inputNewArticle {
+  width: 400px;
+  height: 40px;
+}

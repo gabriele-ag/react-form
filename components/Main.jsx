@@ -4,8 +4,8 @@ import { useState } from 'react';
 function Main () {
 
     const [newPost, setNewPost] = useState("");
-     const [postList, setPostList] = useState(blogPosts);
-     const [error, setError] = useState(false)
+    const [postList, setPostList] = useState(blogPosts);
+    const [error, setError] = useState(false)
 
      const manageSubmit = (event) => {
          event.preventDefault()
@@ -28,7 +28,7 @@ function Main () {
 
     return (
         <div className="container">
-            <form onSubmit = {manageSubmit}>
+            <form onSubmit = {manageSubmit} className="formNewArticle">
                 <label htmlFor="name">
                     <h2>Inserisci nuovo nome articolo</h2>
                 </label>
@@ -39,8 +39,9 @@ function Main () {
                 onChange= {handleInputChange}
                 autoComplete="off"
                 aria-label= "Aggiungi nuovo titolo"
+                className="inputNewArticle"
                  />
-                <button type="submit">Aggiungi</button>
+                <button type="submit" className="btnNewArticle">Aggiungi</button>
             </form>
             <ul>
                 {postList.map((curPost, index) => (
